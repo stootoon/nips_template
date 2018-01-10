@@ -1,0 +1,70 @@
+% TODO:
+%% [X] Run the code for the full dynamics with the new equations to make sure it works.
+%% [X] Update the text so the equations use the correct rescaled form (i.e. no 1/sd^2 (y - Ax) on dldt).
+%% [X] Update the Lagrangian for the general case
+%% [X] Fill out the supps proving that the general case works.
+%% [X] Update the text so that it introduces the general case first, then specific examples.
+%% [X] Run the code for the general case and make sure it works
+%% [X] Update the text to deemphasize the etc, call them eq for equalization
+%% [X] Reconcile the full case with the 1-block case. Why aren't they exactly the same? Numerical issues?
+%% [ ] Update figures
+%% Figures
+%% 1. Various all to all circuits.
+%% 5. Circuit implications + readout in cortex.
+% --------------------------
+\documentclass{article}
+
+% if you need to pass options to natbib, use, e.g.:
+% \PassOptionsToPackage{numbers, compress}{natbib}
+% before loading nips_2017
+%
+% to avoid loading the natbib package, add option nonatbib:
+% \usepackage[nonatbib]{nips_2017}
+
+\usepackage[final]{nips}
+
+% to compile a camera-ready version, add the [final] option, e.g.:
+%\usepackage[final]{nips_2017}
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{amsmath}
+\usepackage{amstext}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\def\bibfont{\small}
+\newcommand{\diag}{\text{diag}}
+\newcommand{\qed}{\tag*{$\blacksquare$}}
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\argmax}{argmax}
+
+\title{Amazing NIPS paper}
+
+
+\author{
+  Really Smart People,
+  Great Lab\\
+  Big City, UK \\
+  \texttt{[really@smart.ac.uk} \\
+}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+A summary of the really cool results go here.
+\end{abstract}
+
+\section{Body}
+A bunch of really cool results go here. This \cite{olshausen_emergence_1996} is a really cool paper.
+\bibliographystyle{unsrt}
+\clearpage
+\pagebreak
+\bibliography{nips}
+\end{document}
+
+
